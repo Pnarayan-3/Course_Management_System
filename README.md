@@ -8,17 +8,17 @@ The application follows a structured backend architecture with Controllers, Serv
 
 ## 🚀 Features
 
-- Course management
-- RESTful API integration
-- React-based frontend
-- ASP.NET Core Web API backend
-- Layered backend architecture
-- DTO-based data transfer
-- Repository and Service layers
-- Middleware for request processing
-- Database integration
-- Environment-based configuration
-- API testing using `.http` files
+* Course management
+* RESTful API integration
+* React-based frontend
+* ASP.NET Core Web API backend
+* Layered backend architecture
+* DTO-based data transfer
+* Repository and Service layers
+* Middleware for request processing
+* Database integration
+* Environment-based configuration
+* API testing using `.http` files
 
 ---
 
@@ -26,34 +26,34 @@ The application follows a structured backend architecture with Controllers, Serv
 
 ### Frontend
 
-- React.js
-- Vite
-- JavaScript
-- HTML5
-- CSS3
-- Node.js
-- npm
+* React.js
+* Vite
+* JavaScript
+* HTML5
+* CSS3
+* Node.js
+* npm
 
 ### Backend
 
-- C#
-- ASP.NET Core Web API
-- .NET
-- Entity Framework Core
-- REST APIs
+* C#
+* ASP.NET Core Web API
+* .NET
+* Entity Framework Core
+* REST APIs
 
 ### Database
 
-- SQL Server
-- Entity Framework Core
+* SQL Server
+* Entity Framework Core
 
 ### Development Tools
 
-- Visual Studio Code
-- Visual Studio
-- Git
-- GitHub
-- Postman
+* Visual Studio Code
+* Visual Studio
+* Git
+* GitHub
+* Postman
 
 ---
 
@@ -92,138 +92,176 @@ CourseManagementSystem/
 │
 ├── .gitignore
 └── README.md
+```
+
+---
 
 ## 🏗️ Architecture
 
-Controllers
+### Controllers
 
 Handle incoming HTTP requests and return appropriate API responses.
 
-Services
+### Services
 
 Contain the application's business logic and coordinate operations between controllers and repositories.
 
-Repositories
+### Repositories
 
 Handle database-related operations and provide an abstraction over data access.
 
-DTOs
+### DTOs
 
 Define the data transferred between the frontend and backend while keeping API contracts separate from database entities.
 
-Models
+### Models
 
 Represent the application's domain and database entities.
 
-Data
+### Data
 
-Contains database configuration and Entity Framework Core related components.
+Contains database configuration and Entity Framework Core-related components.
 
-Middleware
+### Middleware
 
 Handles common HTTP request/response processing and cross-cutting concerns.
+
+---
 
 ## ⚙️ Prerequisites
 
 Make sure the following are installed before running the project:
 
-Node.js
-npm
-.NET SDK
-SQL Server
-Git
+* Node.js
+* npm
+* .NET SDK
+* SQL Server
+* Git
 
 Verify the installations:
 
+```bash
 node --version
 npm --version
 dotnet --version
 git --version
+```
 
+---
 
 ## 🔧 Installation
 
-1. Clone the Repository
+### 1. Clone the Repository
 
+```bash
 git clone https://github.com/Pnarayan-3/CourseManagementSystem.git
 cd CourseManagementSystem
+```
 
-2. Backend Setup
+### 2. Backend Setup
 
 Navigate to the backend directory:
 
+```bash
 cd CourseManagementSystem
+```
 
 Restore the .NET dependencies:
 
+```bash
 dotnet restore
+```
 
-Configure the database connection in appsettings.json.
+Configure the database connection in `appsettings.json`.
 
 Example:
 
+```json
 {
   "ConnectionStrings": {
     "DefaultConnection": "YOUR_DATABASE_CONNECTION_STRING"
   }
 }
+```
 
 If the project uses Entity Framework Core migrations, update the database:
 
+```bash
 dotnet ef database update
+```
 
 Start the backend:
 
+```bash
 dotnet run
+```
 
 The API will be available at the URL displayed in the terminal.
 
-3. Frontend Setup
+### 3. Frontend Setup
 
 Open a new terminal and navigate to the frontend directory:
 
+```bash
 cd cmsfrontend/course-frontend
+```
 
 Install the required dependencies:
 
+```bash
 npm install
+```
 
 Start the React development server:
 
+```bash
 npm run dev
+```
 
 Vite will provide a local URL, usually:
 
+```text
 http://localhost:5173
+```
 
 Open the URL in your browser to access the application.
 
+---
 
 ## 🧪 API Testing
 
 The backend APIs can be tested using:
 
-Postman
-.http request files
+* Postman
+* `.http` request files
 
+---
 
-🖥️ Running the Application
+## 🖥️ Running the Application
 
 Run the backend and frontend separately.
 
-Backend
+### Backend
+
+```bash
 cd CourseManagementSystem
 dotnet run
-Frontend
+```
+
+### Frontend
+
+```bash
 cd cmsfrontend/course-frontend
 npm install
 npm run dev
+```
 
 Once both applications are running, open the frontend URL provided by Vite.
 
+---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Pushkar Narayan
+**Pushkar Narayan**
 
 ⭐ If you find this project useful, consider giving the repository a star.
