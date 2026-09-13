@@ -206,8 +206,7 @@ Open a new terminal and navigate to the frontend directory:
 cd cmsfrontend/course-frontend
 ```
 
-Install the required dependencies:
-
+Install the required dependencies: 
 ```bash
 npm install
 ```
