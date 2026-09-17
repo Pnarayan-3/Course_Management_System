@@ -112,7 +112,7 @@ Handle database-related operations and provide an abstraction over data access.
 
 ### DTOs
 
-Define the data transferred between the frontend and backend while keeping API contracts separate from database entities.
+Define the data transferred between the frontend and backend while keeping API  contracts separate from database entities.
 
 ### Models
 
